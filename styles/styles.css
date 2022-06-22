@@ -1,5 +1,4 @@
             body {
-                /*display: flex;*/
                 text-align: center;
                 margin: 0px;
                 padding: 0px;
@@ -18,12 +17,24 @@
                 border-top: 4px solid #f13e3e;
             }
             
+            .container-fluid {
+                display: flex;
+                flex-direction: right;
+            }
+            
+            .cervezas {
+                display: flex;
+                flex-direction: column;
+                width: 65%;
+                margin-top: 100px;
+            }
+            
             .center {
                 width: 75%;
                 margin: 0px auto;
                 min-height: 650px;
                 display: flex;
-                align-items: left;
+                align-items: center;
             }
             
             .galeria h2 {
@@ -46,11 +57,11 @@
                 ;
             }
             
-            .logo {
-                width: 30%;
+            .app-logo {
+                width: 50%;
+                margin-top: 35px;
                 font-size: 30px;
                 float: left;
-                margin-top: 35px;
             }
             
             .logo img {
@@ -77,9 +88,15 @@
                 }
             }
             
+            .bg-personal {
+                background-color: rgba(110, 108, 108, 0.2);
+                position: fixed;
+                width: 100%;
+            }
+            
             .brand {
                 display: block;
-                margin: 0px;
+                margin: 20px;
                 float: left;
             }
             
