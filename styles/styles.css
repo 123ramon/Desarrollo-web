@@ -188,14 +188,100 @@
                 margin: 0px auto;
                 padding: 0px;
             }
+            /*RESPONSIVE*/
+            /*Desde la anchura 963px hasta la anchura 1488px de pantalla*/
             
-            @media screen and (max-with: 400px) {
-                .header {
-                    margin-top: 15%;
+            @media (max-width: 1488px) {
+                /*Se ejecutarán estos estilos*/
+                .center {
+                    width: 85%;
                 }
-                .content .form-group {
-                    margin: 50%;
-                    width: 15rem;
+            }
+            /*Desde la anchura 0px hasta la anchura 963px de pantalla*/
+            
+            @media (max-width: 1314px) {
+                .center {
+                    width: 95%;
+                }
+                #menu ul {
+                    width: auto;
+                }
+            }
+            
+            @media (max-width: 881px) {
+                #logo {
+                    width: 265px;
+                }
+                #menu {
+                    width: auto;
+                }
+            }
+            
+            @media (max-width: 813px) {
+                #logo {
+                    float: none;
+                    /*width: 240px;*/
+                    margin: 0px auto;
+                    margin-top: 20px;
+                }
+                #menu,
+                #menu ul {
+                    clear: both;
+                    float: none;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    line-height: 43px;
+                }
+                #content {
+                    float: none;
+                    width: 100%;
+                }
+                #sidebar {
+                    float: none;
+                    width: 60%;
+                    margin: 0px auto;
+                    margin-bottom: 50px;
+                }
+                #slider h1 {
                     text-align: center;
+                    padding-top: 115px;
+                    font-size: 25px;
+                }
+                .mid-form {
+                    width: 70%;
+                }
+            }
+            
+            @media (max-width: 497px) {
+                #header {
+                    min-height: 130px;
+                    overflow: hidden;
+                }
+                #menu,
+                #menu ul {
+                    line-height: 50px;
+                }
+                #menu ul li {
+                    margin-left: 7px;
+                    margin-right: 7px;
+                }
+                #slider {
+                    height: 180px;
+                }
+                #slider h1 {
+                    text-align: center;
+                    font-size: 19px;
+                    padding-top: 30px;
+                }
+                #slider .btn-white {
+                    margin-top: 20px;
+                }
+                #slider.slider-small {
+                    height: 100px;
+                }
+                #slider.slider-small h1 {
+                    text-align: center;
+                    padding-top: 35px;
                 }
             }
